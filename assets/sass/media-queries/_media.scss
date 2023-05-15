@@ -1,0 +1,177 @@
+@use "../abstracts/colors" as *;
+
+//------------------------------------------------------------------------------
+
+//SCREEN <= 768px
+@media (max-width: 768px) {
+  //NAVBAR
+  .nav-bar-content {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    background-color: $clr-darker-t;
+    backdrop-filter: blur(0.4rem);
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .nav-list {
+    text-align: center;
+
+    & li {
+      padding: clamp(0.5rem, 1.2vh, 1.2rem) 0;
+    }
+  }
+
+  //NAVBAR ACTIVE
+  //The mobile nav-menu comes out of the right of the screen
+  .nav-menu.active {
+    transform: translateX(0%);
+  }
+}
+
+//------------------------------------------------------------------------------
+
+//SCREEN >= 769px
+@media (min-width: 769px) {
+  //NAVBAR
+  .nav-bar-content {
+    justify-content: center;
+    padding-right: 0.65rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 4.5vw, 4.5rem);
+  }
+}
+
+//------------------------------------------------------------------------------
+
+//MEDIA QUERY FOR "HOVER" DEVICES
+@media (hover: hover) {
+
+  //NAVLINK HOVER
+  .nav-list li div:hover {
+    -ms-transform: scale(1.055);
+    -webkit-transform: scale(1.055);
+    transform: scale(1.055);
+
+    text-shadow: 0 0 0.6rem $clr-light;
+    transition: all 0.1s ease-in-out;
+  }
+
+  //BUTTONS, CARDS, SOCIAL ICONS HOVER & FOCUS
+
+  .div-as-btn:hover,
+  .btn:hover {
+    //SCALE
+    -webkit-transform: scale(1.055);
+    transform: scale(1.055);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .div-as-btn:hover,
+  .btn:hover,
+  .btn-skills:focus {
+    //SHADOW
+    box-shadow: 0 0 1rem $clr-light;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .div-as-btn:hover,
+  .btn-skills:active,
+  .btn-skills:focus,
+  .btn-send:hover {
+    //BACKGROUND
+    background: $clr-light;
+
+    //TEXT
+    color: $clr-dark;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .div-as-btn a:hover {
+    //TEXT
+    color: $clr-dark;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .social-icon-clr:hover {
+    -webkit-transform: scale(1.055);
+    transform: scale(1.055);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .card:hover {
+    background: $clr-light;
+    box-shadow: 0 0 1rem $clr-light;
+    transition: all 0.25s ease-in-out;
+
+    & a {
+      color: $clr-dark;
+    }
+  }
+
+  //FORM
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    box-shadow: 0 0 1rem $clr-light;
+    transition: all 0.25s ease-in-out;
+  }
+
+  //SCROLLBAR HOVER
+  //Chrome, Edge and Safari
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: $clr-thumb-hvr;
+  }
+}
+
+//------------------------------------------------------------------------------
+
+//MEDIA QUERY FOR "NONE-HOVER" DEVICES
+@media (hover: none) {
+  //BUTTONS
+  .btn-skills:focus,
+  .btn-skills:active {
+    background: $clr-light;
+    box-shadow: 0 0 1rem $clr-light;
+    transition: all 0.25s ease-in-out;
+
+    & a {
+      color: $clr-dark;
+    }
+  }
+
+  //CARDS
+  .card:focus,
+  .card:active {
+    background: $clr-light;
+    box-shadow: 0 0 1rem $clr-light;
+    transition: all 0.25s ease-in-out;
+  }
+
+  //FORM
+  input:focus,
+  textarea:focus {
+    box-shadow: 0 0 1rem $clr-light;
+  }
+}
+
+//------------------------------------------------------------------------------

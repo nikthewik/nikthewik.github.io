@@ -1,0 +1,80 @@
+@use "../abstracts/colors" as *;
+
+//------------------------------------------------------------------------------
+
+.projects-section {
+  width: min(84%, 37rem);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.fe-dev,
+.videomaking,
+.photography {
+  width: min(84%, 37rem);
+  margin-bottom: 1rem;
+}
+
+.cards {
+  width: clamp(17rem, 35vw, 22rem);
+  padding: 1rem 1rem 1.5rem 1rem;
+  gap: 2rem;
+  align-items: baseline;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  flex: 0 0 100%;
+  background-color: $clr-light;
+  border: 1px solid $clr-light;
+  border-radius: 1.8rem;
+  cursor: pointer;
+  scroll-snap-align: center;
+}
+
+.card-link {
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1.8rem;
+}
+
+.card-img {
+  border-radius: 1.8rem 1.8rem 0 0;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card-bio {
+  width: min(74%, 14.5rem);
+  min-height: 6rem;
+  max-height: 7.2rem;
+  color: $clr-dark;
+}
+
+//------------------------------------------------------------------------------
+
+//SCROLLBAR
+//Firefox
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #5E5E5E #262626bc;
+}
+
+//Chrome, Edge and Safari
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #262626bc;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #5E5E5E;
+}
+
+//------------------------------------------------------------------------------

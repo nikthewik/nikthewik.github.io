@@ -1,0 +1,40 @@
+@use "../abstracts/colors" as *;
+
+//HAMBURGER
+.hamburger {
+  background-color: transparent;
+  gap: 0.313rem;
+  padding: 0.65rem;
+  cursor: pointer;
+  z-index: 30;
+
+  & > span {
+    z-index: 9999;
+    background-color: $clr-light;
+    width: 1.875rem;
+    height: 1px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+//HAMBURGER ACTIVE
+//2 hamburger lines form an X, the central one fade out
+.hamburger.active {
+  padding-right: 0.25rem;
+
+  & > span:first-child {
+    transform-origin: 5px -3px;
+    transform: rotate(45deg);
+  }
+  
+  & > span:nth-child(2) {
+    transform: translateX(-75%);
+    opacity: 0;
+  }
+  
+  & > span:last-child {
+    transform-origin: 5px 5px;
+    transform: rotate(-45deg);
+  }
+}

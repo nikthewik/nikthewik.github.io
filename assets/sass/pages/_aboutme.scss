@@ -1,0 +1,27 @@
+@use "../abstracts/colors" as *;
+
+//------------------------------------------------------------------------------
+
+//ABOUT ME SECTION
+.aboutme-section {
+  width: min(72%, 32rem);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+//IMG
+.illustration-img {
+  width: clamp(18.75rem, 40vw, 23rem);
+  margin: 1rem 0;
+}
+
+.profile-img {
+  width: clamp(10rem, 20vw, 12rem);
+  height: clamp(10rem, 20vw, 12rem);
+  border-radius: clamp(5rem, 10vw, 6rem);
+  border: 1px solid $clr-light;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
+//------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+@use "../abstracts/colors" as *;
+
+.skills-section {
+  width: min(84%, 37rem);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
