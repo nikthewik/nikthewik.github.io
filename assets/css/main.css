@@ -320,25 +320,6 @@ em {
     background: #444444;
   }
 }
-@media (hover: none) {
-  .btn-skills:active,
-  .btn-skills:focus {
-    background: #FFFFFF;
-    color: #090909;
-    box-shadow: 0 0 1rem #FFFFFF;
-    transition: all 0.25s ease-in-out;
-  }
-  .card:focus,
-  .card:active {
-    background: #FFFFFF;
-    box-shadow: 0 0 1rem #FFFFFF;
-    transition: all 0.25s ease-in-out;
-  }
-  input:focus,
-  textarea:focus {
-    box-shadow: 0 0 1rem #FFFFFF;
-  }
-}
 .header {
   height: 100vh;
 }

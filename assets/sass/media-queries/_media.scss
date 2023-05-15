@@ -143,31 +143,3 @@
 }
 
 //------------------------------------------------------------------------------
-
-//MEDIA QUERY FOR "NONE-HOVER" DEVICES
-@media (hover: none) {
-  //BUTTONS
-  .btn-skills:active,
-  .btn-skills:focus {
-    background: $clr-light;
-    color: $clr-dark;
-    box-shadow: 0 0 1rem $clr-light;
-    transition: all 0.25s ease-in-out;
-  }
-
-  //CARDS
-  .card:focus,
-  .card:active {
-    background: $clr-light;
-    box-shadow: 0 0 1rem $clr-light;
-    transition: all 0.25s ease-in-out;
-  }
-
-  //FORM
-  input:focus,
-  textarea:focus {
-    box-shadow: 0 0 1rem $clr-light;
-  }
-}
-
-//------------------------------------------------------------------------------
