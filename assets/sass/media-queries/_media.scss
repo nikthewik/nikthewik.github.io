@@ -10,8 +10,7 @@
   }
 
   .nav-menu {
-    background-color: $clr-darker-t;
-    backdrop-filter: blur(0.4rem);
+    background-color: $clr-darker;
     width: 50%;
     height: 100vh;
     flex-direction: column;
@@ -148,15 +147,12 @@
 //MEDIA QUERY FOR "NONE-HOVER" DEVICES
 @media (hover: none) {
   //BUTTONS
-  .btn-skills:focus,
-  .btn-skills:active {
+  .btn-skills:active,
+  .btn-skills:focus {
     background: $clr-light;
+    color: $clr-dark;
     box-shadow: 0 0 1rem $clr-light;
     transition: all 0.25s ease-in-out;
-
-    & a {
-      color: $clr-dark;
-    }
   }
 
   //CARDS

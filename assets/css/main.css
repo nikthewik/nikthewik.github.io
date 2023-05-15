@@ -228,8 +228,7 @@ em {
     justify-content: space-between;
   }
   .nav-menu {
-    background-color: rgba(3, 3, 3, 0.4980392157);
-    backdrop-filter: blur(0.4rem);
+    background-color: #030303;
     width: 50%;
     height: 100vh;
     flex-direction: column;
@@ -322,15 +321,12 @@ em {
   }
 }
 @media (hover: none) {
-  .btn-skills:focus,
-  .btn-skills:active {
+  .btn-skills:active,
+  .btn-skills:focus {
     background: #FFFFFF;
+    color: #090909;
     box-shadow: 0 0 1rem #FFFFFF;
     transition: all 0.25s ease-in-out;
-  }
-  .btn-skills:focus a,
-  .btn-skills:active a {
-    color: #090909;
   }
   .card:focus,
   .card:active {
