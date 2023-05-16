@@ -39,6 +39,7 @@ select {
 
 body {
   background-color: #090909;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 a,
