@@ -7,20 +7,15 @@
   height: 100vh;
 }
 
-//------------------------------------------------------------------------------
-
-//TYPEWRITER EFFECT
 .cap,
 .cap-bn,
 .cap-msg {
-  position: relative;
-  padding-bottom: 0.625rem;
+  height: max-content;
   margin-bottom: 4.5rem;
-  overflow: hidden;
 }
 
-.cap::before,
-.cap-bn::before {
+/*
+.cap::before {
   content: "";
   position: absolute;
   top: 0;
@@ -29,18 +24,18 @@
   width: 100%;
   background-color: $clr-dark;
   border-left: 1px solid $clr-light;
-  animation: animate 4s steps(12) infinite;
-}
+  animation: animate 4s infinite;
+} 
 
 @keyframes animate {
 
-  40%, 60% {
+  40%, 50% {
     left: calc(100% + 4px);
   }
 
-  100% {
-    left: 0%;
+  0%, 90%, 100% {
+    left: 0;
   }
-}
+} */
 
 //------------------------------------------------------------------------------

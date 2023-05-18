@@ -4,13 +4,16 @@
 
 //SCREEN <= 768px
 @media (max-width: 768px) {
+
   //NAVBAR
   .nav-bar-content {
     justify-content: space-between;
   }
 
   .nav-menu {
-    background-color: $clr-darker;
+    background-color: $clr-darker-t;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); //For Safari
     width: 50%;
     height: 100vh;
     flex-direction: column;
@@ -42,6 +45,7 @@
 
 //SCREEN >= 769px
 @media (min-width: 769px) {
+
   //NAVBAR
   .nav-bar-content {
     justify-content: center;
@@ -116,14 +120,10 @@
     transition: all 0.25s ease-in-out;
   }
 
-  .card:hover {
-    background: $clr-light;
-    box-shadow: 0 0 1rem $clr-light;
+  .card:hover,
+  .card:focus {
+    box-shadow: 0 0 0.5rem $clr-light;
     transition: all 0.25s ease-in-out;
-
-    & a {
-      color: $clr-dark;
-    }
   }
 
   //FORM

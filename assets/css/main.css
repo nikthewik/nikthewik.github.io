@@ -62,7 +62,8 @@ h1 {
 
 .cap,
 .cap-bn,
-.cap-msg {
+.cap-msg,
+#cursor {
   font-size: clamp(1.875rem, 3.8vw, 2.5rem);
   font-style: italic;
 }
@@ -77,16 +78,22 @@ h3 {
 
 .basic-text {
   font-size: clamp(1rem, 2.06vw, 1.2rem);
-  text-align: center;
+}
+
+.copyright {
+  font-size: clamp(0.8rem, 1.64vw, 0.96rem);
+  margin-bottom: 1.3rem;
 }
 
 a,
 body,
 h2,
 h3,
-.basic-text {
+.basic-text,
+.copyright {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
+  text-align: center;
 }
 
 strong {
@@ -229,7 +236,9 @@ em {
     justify-content: space-between;
   }
   .nav-menu {
-    background-color: #030303;
+    background-color: rgba(3, 3, 3, 0.4784313725);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     width: 50%;
     height: 100vh;
     flex-direction: column;
@@ -302,13 +311,10 @@ em {
     transform: scale(1.055);
     transition: all 0.25s ease-in-out;
   }
-  .card:hover {
-    background: #FFFFFF;
-    box-shadow: 0 0 1rem #FFFFFF;
+  .card:hover,
+  .card:focus {
+    box-shadow: 0 0 0.5rem #FFFFFF;
     transition: all 0.25s ease-in-out;
-  }
-  .card:hover a {
-    color: #090909;
   }
   input:hover,
   input:focus,
@@ -328,33 +334,33 @@ em {
 .cap,
 .cap-bn,
 .cap-msg {
-  position: relative;
-  padding-bottom: 0.625rem;
+  height: max-content;
   margin-bottom: 4.5rem;
-  overflow: hidden;
 }
 
-.cap::before,
-.cap-bn::before {
+/*
+.cap::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #090909;
-  border-left: 1px solid #FFFFFF;
-  animation: animate 4s steps(12) infinite;
-}
+  background-color: $clr-dark;
+  border-left: 1px solid $clr-light;
+  animation: animate 4s infinite;
+} 
 
 @keyframes animate {
-  40%, 60% {
+
+  40%, 50% {
     left: calc(100% + 4px);
   }
-  100% {
-    left: 0%;
+
+  0%, 90%, 100% {
+    left: 0;
   }
-}
+} */
 .aboutme-section {
   width: min(72%, 32rem);
   gap: 2rem;
@@ -390,14 +396,13 @@ em {
 .fe-dev,
 .videomaking,
 .photography {
-  width: min(84%, 37rem);
   margin-bottom: 1rem;
 }
 
 .cards {
   width: clamp(17rem, 35vw, 22rem);
   padding: 1rem 1rem 1.5rem 1rem;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: baseline;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -425,7 +430,7 @@ em {
 }
 
 .card-bio {
-  width: min(74%, 14.5rem);
+  width: min(82%, 14.5rem);
   min-height: 6rem;
   max-height: 7.2rem;
   color: #090909;

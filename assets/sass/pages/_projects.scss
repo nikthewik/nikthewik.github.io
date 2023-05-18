@@ -2,6 +2,7 @@
 
 //------------------------------------------------------------------------------
 
+//PROJECTS
 .projects-section {
   width: min(84%, 37rem);
   gap: 2rem;
@@ -11,14 +12,13 @@
 .fe-dev,
 .videomaking,
 .photography {
-  width: min(84%, 37rem);
   margin-bottom: 1rem;
 }
 
 .cards {
   width: clamp(17rem, 35vw, 22rem);
   padding: 1rem 1rem 1.5rem 1rem;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: baseline;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -46,7 +46,7 @@
 }
 
 .card-bio {
-  width: min(74%, 14.5rem);
+  width: min(82%, 14.5rem);
   min-height: 6rem;
   max-height: 7.2rem;
   color: $clr-dark;
