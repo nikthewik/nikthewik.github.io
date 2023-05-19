@@ -337,6 +337,9 @@ i {
   margin-bottom: 4.5rem;
   padding-bottom: 0.625rem;
   overflow: hidden;
+}
+
+.cap {
   position: relative;
 }
 
@@ -349,7 +352,6 @@ i {
   content: ".";
   color: #090909;
   background-color: #090909;
-  border-left: 1px solid #FFFFFF;
   position: absolute;
   top: 0;
   left: 0;
@@ -375,11 +377,17 @@ i {
   }
 }
 @keyframes animate {
-  40%, 50% {
-    left: calc(100% + 4px);
-  }
-  0%, 85% {
+  0% {
     left: 0%;
+    border-left: 1px solid #FFFFFF;
+  }
+  33%, 43% {
+    left: calc(100% + 4px);
+    border-left: 1px solid #FFFFFF;
+  }
+  75% {
+    left: 0%;
+    border-left: 0px solid #FFFFFF;
   }
 }
 .aboutme-section {

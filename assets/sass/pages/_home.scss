@@ -7,12 +7,18 @@
   height: 100vh;
 }
 
+//------------------------------------------------------------------------------
+
+//TYPEWRITER EFFECT
 .cap,
 .cap-bn,
 .cap-msg {
   margin-bottom: 4.5rem;
   padding-bottom: 0.625rem;
   overflow: hidden;
+}
+
+.cap {
   position: relative;
 }
 
@@ -25,7 +31,6 @@
   content: ".";
   color: $clr-dark;
   background-color: $clr-dark;
-  border-left: 1px solid $clr-light;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,6 +38,10 @@
   animation: animate 4s infinite;
 }
 
+//------------------------------------------------------------------------------
+
+//TYPEWRITER ANIMATIONS
+//Word-generating
 @keyframes words {
 
   0% {
@@ -56,14 +65,22 @@
   }
 }
 
+//Cursor and Movement
 @keyframes animate {
 
-  40%, 50% {
+  0% {
+    left: 0%;
+    border-left: 1px solid $clr-light;
+  }
+ 
+  33%, 43% {
     left: calc(100% + 4px);
+    border-left: 1px solid $clr-light;
   }
 
-  0%, 85% {
+  75% {
     left: 0%;
+    border-left: 0px solid $clr-light;
   }
 }
 
