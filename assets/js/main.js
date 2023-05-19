@@ -23,11 +23,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 }))
 
 ////////////////////////////////////////////////////////////////////////////
-
+/*
 const text = document.querySelector(".cap");
 
 //TYPEWRITER EFFECT
-//Text changes every 1.8s. After 20s the function repeats.
+//Text changes every 1.7s. After 6.8s the function repeats.
 const textLoad = () => {
   setTimeout(() => {
     text.textContent = "Jr. Front-End Dev.";
@@ -48,5 +48,5 @@ const textLoad = () => {
 
 textLoad();
 setInterval(textLoad, 8500);
-
+*/
 ////////////////////////////////////////////////////////////////////////////

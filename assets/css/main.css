@@ -96,11 +96,11 @@ h3,
   text-align: center;
 }
 
-strong {
+b {
   font-weight: 400;
 }
 
-em {
+i {
   font-style: italic;
   font-weight: 200;
 }
@@ -334,33 +334,54 @@ em {
 .cap,
 .cap-bn,
 .cap-msg {
-  height: max-content;
   margin-bottom: 4.5rem;
+  padding-bottom: 0.625rem;
+  overflow: hidden;
+  position: relative;
 }
 
-/*
 .cap::before {
-  content: "";
+  content: "Jr. Front-End Dev.";
+  animation: words 20s infinite 2s;
+}
+
+.cap::after {
+  content: ".";
+  color: #090909;
+  background-color: #090909;
+  border-left: 1px solid #FFFFFF;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  background-color: $clr-dark;
-  border-left: 1px solid $clr-light;
   animation: animate 4s infinite;
-} 
+}
 
+@keyframes words {
+  0% {
+    content: "Jr. Front-End Dev.";
+  }
+  20% {
+    content: "Videomaker";
+  }
+  40% {
+    content: "Videoeditor";
+  }
+  60% {
+    content: "Photographer";
+  }
+  80% {
+    content: "From Another World";
+  }
+}
 @keyframes animate {
-
   40%, 50% {
     left: calc(100% + 4px);
   }
-
-  0%, 90%, 100% {
-    left: 0;
+  0%, 85% {
+    left: 0%;
   }
-} */
+}
 .aboutme-section {
   width: min(72%, 32rem);
   gap: 2rem;
