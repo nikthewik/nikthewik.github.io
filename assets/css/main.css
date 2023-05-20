@@ -141,6 +141,14 @@ i {
   align-items: center;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .hamburger {
   background-color: transparent;
   gap: 0.313rem;
@@ -339,10 +347,6 @@ i {
   overflow: hidden;
 }
 
-.cap {
-  position: relative;
-}
-
 .cap::before {
   content: "Jr. Front-End Dev.";
   animation: words 20s infinite 2s;
@@ -538,4 +542,8 @@ textarea {
 
 .photo:last-of-type {
   margin-bottom: 2rem;
+}
+
+.bottom {
+  bottom: 0;
 }

@@ -18,10 +18,6 @@
   overflow: hidden;
 }
 
-.cap {
-  position: relative;
-}
-
 .cap::before {
   content: "Jr. Front-End Dev.";
   animation: words 20s infinite 2s;
