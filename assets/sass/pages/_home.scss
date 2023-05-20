@@ -78,7 +78,16 @@
     border-left: 1px solid $clr-light;
   }
 
+  74% {
+    border-left: 1px solid $clr-light;
+  }
+
   75% {
+    left: 0%;
+    border-left: 0px solid $clr-light;
+  }
+
+  100% {
     left: 0%;
     border-left: 0px solid $clr-light;
   }
