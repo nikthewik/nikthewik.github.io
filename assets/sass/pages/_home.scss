@@ -20,7 +20,7 @@
 
 .cap::before {
   content: "Jr. Front-End Dev.";
-  animation: words 20s infinite 2s;
+  animation: 20s 2s infinite words;
 }
 
 .cap::after {
@@ -31,7 +31,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  animation: animate 4s infinite;
+  animation: 4s infinite animate;
 }
 
 //------------------------------------------------------------------------------
