@@ -88,16 +88,13 @@
   }
 
   .div-as-btn:hover,
-  .btn:hover,
-  .btn-skills:focus {
+  .btn:hover {
     //SHADOW
     box-shadow: 0 0 1rem $clr-light;
     transition: all 0.25s ease-in-out;
   }
 
   .div-as-btn:hover,
-  .btn-skills:active,
-  .btn-skills:focus,
   .btn-send:hover {
     //BACKGROUND
     background: $clr-light;

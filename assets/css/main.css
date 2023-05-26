@@ -297,14 +297,11 @@ i {
     transition: all 0.25s ease-in-out;
   }
   .div-as-btn:hover,
-  .btn:hover,
-  .btn-skills:focus {
+  .btn:hover {
     box-shadow: 0 0 1rem #FFFFFF;
     transition: all 0.25s ease-in-out;
   }
   .div-as-btn:hover,
-  .btn-skills:active,
-  .btn-skills:focus,
   .btn-send:hover {
     background: #FFFFFF;
     color: #090909;
@@ -442,20 +439,15 @@ i {
 }
 .skill:first-of-type {
   border-radius: 2rem 2rem 0 0;
-  animation: 8s infinite highlighted;
 }
-.skill:nth-of-type(2) {
-  animation: 8s 4s infinite highlighted;
-}
-.skill:nth-of-type(3) {
-  animation: 8s 8s infinite highlighted;
-}
-.skill:nth-of-type(4) {
-  animation: 8s 2s infinite highlighted;
+.skill:first-of-type, .skill:nth-of-type(3), .skill:last-of-type {
+  animation: 10s infinite highlighted;
 }
 .skill:last-of-type {
   border-radius: 0 0 2rem 2rem;
-  animation: 8s 6s infinite highlighted;
+}
+.skill:nth-of-type(2), .skill:nth-of-type(4) {
+  animation: 10s 5s infinite highlighted;
 }
 
 @keyframes highlighted {
