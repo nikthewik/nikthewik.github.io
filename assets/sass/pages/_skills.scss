@@ -28,7 +28,7 @@
   &:first-of-type,
   &:nth-of-type(3),
   &:last-of-type {
-    animation: 10s infinite highlighted;
+    animation: 8s infinite highlighted;
   }
 
   &:last-of-type {
@@ -37,7 +37,7 @@
 
   &:nth-of-type(2),
   &:nth-of-type(4) {
-    animation: 10s 5s infinite highlighted;
+    animation: 8s 4s infinite highlighted;
   }
 }
 

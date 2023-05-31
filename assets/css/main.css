@@ -441,13 +441,13 @@ i {
   border-radius: 2rem 2rem 0 0;
 }
 .skill:first-of-type, .skill:nth-of-type(3), .skill:last-of-type {
-  animation: 10s infinite highlighted;
+  animation: 8s infinite highlighted;
 }
 .skill:last-of-type {
   border-radius: 0 0 2rem 2rem;
 }
 .skill:nth-of-type(2), .skill:nth-of-type(4) {
-  animation: 10s 5s infinite highlighted;
+  animation: 8s 4s infinite highlighted;
 }
 
 @keyframes highlighted {
