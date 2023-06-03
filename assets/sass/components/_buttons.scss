@@ -15,17 +15,36 @@
 }
 
 .div-as-btn,
-.btn {
+.btn-send {
   border: 1px solid $clr-light;
   border-radius: 0.375rem;
   color: $clr-light;
   cursor: pointer;
 }
 
-.btn {
-  background-color: $clr-dark;
+.btn-left,
+.btn-right {
+  width: 2.6rem;
+  height: 2.6rem;
+  top: 42.5%;
+  font-size: 4rem;
+  color: $clr-thumb;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-left {
+  left: -15%;
+}
+
+.btn-right {
+  right: -15%;
+}
+
+.btn-send {
   width: min(45%, 16rem);
   height: 1.65rem;
+  background-color: transparent;
 }
 
 //------------------------------------------------------------------------------

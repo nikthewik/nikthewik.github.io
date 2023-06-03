@@ -52,13 +52,13 @@
       name="twitter:title"
       content="NikTheWik | Developer, Videomaker & Photographer"
     />
-    <meta name="twitter:description" content="NikTheWik is a Jr. Front-End
-    Developer who has strong skills as Videomaker and Photographer. His
-    creativity comes &#34;From Another World&#34;, just like his style.">
     <meta
-      name="twitter:image"
-      content="assets/img/profile-img.webp"
+      name="twitter:description"
+      content="NikTheWik is a Jr. Front-End
+    Developer who has strong skills as Videomaker and Photographer. His
+    creativity comes &#34;From Another World&#34;, just like his style."
     />
+    <meta name="twitter:image" content="assets/img/profile-img.webp" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -238,231 +238,261 @@
         </div>
 
         <!-- FRONT-END DEVELOPMENT -->
-        <div class="fe-dev flex-cc">
+        <div class="fed flex-cc">
           <h3>FRONT-END DEVELOPER</h3>
-          <div class="cards scrollbar flex">
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://github.com/nikthewik/nikthewik.github.io"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/fed-my-website.webp"
-                  alt="This website's home image"
-                />
-                <p class="card-bio basic-text">
-                  <b>THIS WEBSITE</b><br />
-                  Did you ever imagine that? <i>Inception</i> stuffs, my friend!
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-github.svg"
-                  alt="Github icon"
-                />
-              </a>
-            </div>
+          <div class="carousel relative">
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://github.com/nikthewik/yt-desktop-layout"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/fed-yt-desktop-layout.webp"
-                  alt="Youtube Desktop Layout image"
-                />
-                <p class="card-bio basic-text">
-                  <b>YT DESKTOP LAYOUT</b><br />
-                  I tried to recreate the desktop layout of
-                  <i>youtube.com</i>'s home.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-github.svg"
-                  alt="Github icon"
-                />
-              </a>
-            </div>
+            <button class="btn-left absolute flex-cc" id="fed-btn-prev">
+              &#8249;
+            </button>
+            <button class="btn-right absolute flex-cc" id="fed-btn-next">
+              &#8250;
+            </button>
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://github.com/nikthewik/meditactive"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/fed-meditactive.webp"
-                  alt="Meditactive image"
-                />
-                <p class="card-bio basic-text">
-                  <b>MEDITACTIVE</b><br />
-                  My very first approach to HTML and CSS with a landing page.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-github.svg"
-                  alt="Github icon"
-                />
-              </a>
-            </div>
+            <ul class="cards scrollbar flex" id="fed-cards">
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://github.com/nikthewik/nikthewik.github.io"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/fed-my-website.webp"
+                    alt="This website's home image"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>THIS WEBSITE</b><br />
+                    Did you ever imagine that? <i>Inception</i> stuffs, my
+                    friend!
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-github.svg"
+                    alt="Github icon"
+                  />
+                </a>
+              </li>
+
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://github.com/nikthewik/yt-desktop-layout"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/fed-yt-desktop-layout.webp"
+                    alt="Youtube Desktop Layout image"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>YT DESKTOP LAYOUT</b><br />
+                    I tried to recreate the desktop layout of
+                    <i>youtube.com</i>'s home.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-github.svg"
+                    alt="Github icon"
+                  />
+                </a>
+              </li>
+
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://github.com/nikthewik/meditactive"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/fed-meditactive.webp"
+                    alt="Meditactive image"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>MEDITACTIVE</b><br />
+                    My very first approach to HTML and CSS with a landing page.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-github.svg"
+                    alt="Github icon"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
         <!-- VIDEOMAKING -->
-        <div class="videomaking flex-cc">
+        <div class="vm flex-cc">
           <h3>VIDEOMAKER</h3>
-          <div class="cards scrollbar flex">
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://www.youtube.com/watch?v=UpFr4zQbUZE"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/vm-630.webp"
-                  alt="The dawn rises behind two palaces"
-                />
-                <p class="card-bio basic-text">
-                  <b>6.30 AM VLOG</b><br />
-                  A vlog in which I reflect on me and my desire for freedom.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-youtube.svg"
-                  alt="YouTube icon"
-                />
-              </a>
-            </div>
+          <div class="carousel relative">
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://www.youtube.com/watch?v=5oiqQy2YGE8"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/vm-a-real-hero.webp"
-                  alt="Two silhouettes kiss each other"
-                />
-                <p class="card-bio basic-text">
-                  <b>A REAL HERO</b><br />
-                  A cinematic video that tastes of peace, love and sea.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-youtube.svg"
-                  alt="YouTube icon"
-                />
-              </a>
-            </div>
+            <button class="btn-left absolute flex-cc" id="vm-btn-prev">
+              &#8249;
+            </button>
+            <button class="btn-right absolute flex-cc" id="vm-btn-next">
+              &#8250;
+            </button>
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://www.youtube.com/watch?v=JLOJ2hhBbYM"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/vm-we-were-dreamers.webp"
-                  alt="A wave on the rocks"
-                />
-                <p class="card-bio basic-text">
-                  <b>WE WERE DREAMERS</b><br />
-                  Loving glances take flight among the streets of Rome.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-youtube.svg"
-                  alt="YouTube icon"
-                />
-              </a>
-            </div>
+            <ul class="cards scrollbar flex" id="vm-cards">
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://www.youtube.com/watch?v=UpFr4zQbUZE"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/vm-630.webp"
+                    alt="The dawn rises behind two palaces"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>6.30 AM VLOG</b><br />
+                    A vlog in which I reflect on me and my desire for freedom.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-youtube.svg"
+                    alt="YouTube icon"
+                  />
+                </a>
+              </li>
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://www.youtube.com/watch?v=CowowBlqMtw"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/vm-fall-back-into-place.webp"
-                  alt="A wave on the rocks"
-                />
-                <p class="card-bio basic-text">
-                  <b>FALL BACK INTO PLACE</b><br />
-                  A peaceful relaxing day at the sea in the daily routine.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-youtube.svg"
-                  alt="YouTube icon"
-                />
-              </a>
-            </div>
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://www.youtube.com/watch?v=5oiqQy2YGE8"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/vm-a-real-hero.webp"
+                    alt="Two silhouettes kiss each other"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>A REAL HERO</b><br />
+                    A cinematic video that tastes of peace, love and sea.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-youtube.svg"
+                    alt="YouTube icon"
+                  />
+                </a>
+              </li>
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://www.youtube.com/watch?v=KQOP-sBq1Sc"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/vm-detective-nikthewik-1.webp"
-                  alt="A detective looks at infinity"
-                />
-                <p class="card-bio basic-text">
-                  <b>DETECTIVE NIKTHEWIK</b><br />
-                  Pilot episode of the unbelievable Detective NikTheWik.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-youtube.svg"
-                  alt="YouTube icon"
-                />
-              </a>
-            </div>
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://www.youtube.com/watch?v=JLOJ2hhBbYM"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/vm-we-were-dreamers.webp"
+                    alt="A wave on the rocks"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>WE WERE DREAMERS</b><br />
+                    Loving glances take flight among the streets of Rome.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-youtube.svg"
+                    alt="YouTube icon"
+                  />
+                </a>
+              </li>
 
-            <div class="card flex-cc">
-              <a
-                class="card-link flex-cc"
-                href="https://www.youtube.com/watch?v=UZhxDoM7pEo"
-                target="_blank"
-              >
-                <img
-                  class="card-img"
-                  src="/assets/img/vm-the-girl-i-havent-met.webp"
-                  alt="Close up of the moon"
-                />
-                <p class="card-bio basic-text">
-                  <b>THE GIRL I HAVEN'T MET</b><br />
-                  A boy who sings to the moon about love he hasn’t found yet.
-                </p>
-                <img
-                  class="social-icon"
-                  src="/assets/img/social-youtube.svg"
-                  alt="YouTube icon"
-                />
-              </a>
-            </div>
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://www.youtube.com/watch?v=CowowBlqMtw"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/vm-fall-back-into-place.webp"
+                    alt="A wave on the rocks"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>FALL BACK INTO PLACE</b><br />
+                    A peaceful relaxing day at the sea in the daily routine.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-youtube.svg"
+                    alt="YouTube icon"
+                  />
+                </a>
+              </li>
+
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://www.youtube.com/watch?v=KQOP-sBq1Sc"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/vm-detective-nikthewik-1.webp"
+                    alt="A detective looks at infinity"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>DETECTIVE NIKTHEWIK</b><br />
+                    Pilot episode of the unbelievable Detective NikTheWik.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-youtube.svg"
+                    alt="YouTube icon"
+                  />
+                </a>
+              </li>
+
+              <li class="card slide">
+                <a
+                  class="card-link flex-cc"
+                  href="https://www.youtube.com/watch?v=UZhxDoM7pEo"
+                  target="_blank"
+                >
+                  <img
+                    class="card-img"
+                    src="/assets/img/vm-the-girl-i-havent-met.webp"
+                    alt="Close up of the moon"
+                  />
+                  <p class="card-bio basic-text">
+                    <b>THE GIRL I HAVEN'T MET</b><br />
+                    A boy who sings to the moon about love he hasn’t found yet.
+                  </p>
+                  <img
+                    class="social-icon"
+                    src="/assets/img/social-youtube.svg"
+                    alt="YouTube icon"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
         <!-- PHOTOGRAPHY -->
-        <div class="photography flex-cc">
+        <div class="ph flex-cc">
           <h3>PHOTOGRAPHER</h3>
-          <div class="cards scrollbar flex">
-            <div class="card flex-cc">
-              <a
+          <div class="carousel relative">
+
+            <button class="btn-left absolute flex-cc">
+              &#8249;
+            </button>
+            <button class="btn-right absolute flex-cc">
+              &#8250;
+            </button>
+
+            <ul class="cards scrollbar flex">
+              <li class="card">
+                <a
                 class="card-link flex-cc"
                 href="/bile-nera/index.html"
                 target="_blank"
@@ -482,9 +512,11 @@
                   alt="Camera icon"
                 />
               </a>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
+
       </div>
     </section>
 

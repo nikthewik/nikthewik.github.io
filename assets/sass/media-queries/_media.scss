@@ -78,27 +78,16 @@
     transition: all 0.1s ease-in-out;
   }
 
-  //BUTTONS, CARDS, SOCIAL ICONS HOVER & FOCUS
+  //BUTTONS HOVER
   .div-as-btn:hover,
-  .btn:hover {
+  .btn-send:hover {
     //SCALE
     -webkit-transform: scale(1.055);
     transform: scale(1.055);
-    transition: all 0.25s ease-in-out;
-  }
-
-  .div-as-btn:hover,
-  .btn:hover {
     //SHADOW
     box-shadow: 0 0 1rem $clr-light;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .div-as-btn:hover,
-  .btn-send:hover {
     //BACKGROUND
     background: $clr-light;
-
     //TEXT
     color: $clr-dark;
     transition: all 0.25s ease-in-out;
@@ -110,12 +99,19 @@
     transition: all 0.25s ease-in-out;
   }
 
+  .btn-left:hover,
+  .btn-right:hover {
+    color: $clr-thumb-hvr;
+  }
+
+  //SOCIAL ICONS HOVER
   .social-icon-clr:hover {
     -webkit-transform: scale(1.055);
     transform: scale(1.055);
     transition: all 0.25s ease-in-out;
   }
 
+  //CARDS HOVER & FOCUS
   .card:hover,
   .card:focus {
     box-shadow: 0 0 0.5rem $clr-light;
