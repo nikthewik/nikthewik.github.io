@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: /thanks/
+Disallow:
+Disallow: /thanks/index.html
 Sitemap: https://nikthewik.github.io/sitemap.xml
