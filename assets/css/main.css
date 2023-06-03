@@ -504,6 +504,10 @@ i {
   gap: 1.5rem;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .card {
   flex: 1 0 100%;
   background-color: #FFFFFF;
