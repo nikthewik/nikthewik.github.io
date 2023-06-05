@@ -1,18 +1,9 @@
 @use "../abstracts/colors" as *;
 
-//------------------------------------------------------------------------------
-
-//ABOUT ME SECTION
 .aboutme-section {
   width: min(72%, 32rem);
   gap: 2rem;
   margin-bottom: 5rem;
-}
-
-//IMG
-.illustration-img {
-  width: clamp(18.75rem, 40vw, 23rem);
-  margin: 1rem 0;
 }
 
 .profile-img {
@@ -23,5 +14,3 @@
   object-fit: cover;
   margin: 1rem 0;
 }
-
-//------------------------------------------------------------------------------

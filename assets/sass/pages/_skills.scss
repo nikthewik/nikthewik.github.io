@@ -1,15 +1,12 @@
 @use "../abstracts/colors" as *;
 
-//------------------------------------------------------------------------------
-
 .skills-section {
   width: min(78%, 37rem);
   gap: 2rem;
   margin-bottom: 5rem;
 }
 
-.s-skills,
-.h-skills {
+.skill-container {
   width: min(60%, 22rem);
   border-radius: 2rem;
   flex-wrap: wrap;
@@ -25,14 +22,14 @@
     border-radius: 2rem 2rem 0 0;
   }
 
+  &:last-of-type {
+    border-radius: 0 0 2rem 2rem;
+  }
+
   &:first-of-type,
   &:nth-of-type(3),
   &:last-of-type {
     animation: 8s infinite highlighted;
-  }
-
-  &:last-of-type {
-    border-radius: 0 0 2rem 2rem;
   }
 
   &:nth-of-type(2),
@@ -40,8 +37,6 @@
     animation: 8s 4s infinite highlighted;
   }
 }
-
-//------------------------------------------------------------------------------
 
 @keyframes highlighted {
 
@@ -57,5 +52,3 @@
     background-color: $clr-dark;
   }
 }
-
-//------------------------------------------------------------------------------

@@ -24,14 +24,7 @@
   padding-bottom: 0.65rem;
 }
 
-.nav-list {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
-  font-size: clamp(0.938rem, 1.8vw, 1rem);
-
-  & li div {
-    padding: 0.25rem 0.5rem;
-    cursor: pointer;
-  }
+.nav-list li div {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }

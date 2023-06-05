@@ -1,29 +1,23 @@
 @use "../abstracts/colors" as *;
 
-//------------------------------------------------------------------------------
-
 //HEADER
 .header {
   height: 100vh;
 }
 
-//------------------------------------------------------------------------------
-
 //TYPEWRITER EFFECT
-.cap,
-.cap-bn,
-.cap-msg {
+.cap {
   margin-bottom: 4.5rem;
   padding-bottom: 0.625rem;
   overflow: hidden;
 }
 
-.cap::before {
+.cap-typewriter::before {
   content: "Jr. Front-End Dev.";
   animation: 20s 2s infinite words;
 }
 
-.cap::after {
+.cap-typewriter::after {
   content: ".";
   color: $clr-dark;
   background-color: $clr-dark;
@@ -33,8 +27,6 @@
   width: 100%;
   animation: 4s infinite animate;
 }
-
-//------------------------------------------------------------------------------
 
 //TYPEWRITER ANIMATIONS
 //Word-generating
@@ -88,5 +80,3 @@
     border-left: 0px solid $clr-light;
   }
 }
-
-//------------------------------------------------------------------------------

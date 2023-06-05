@@ -1,7 +1,5 @@
 @use "../abstracts/colors" as *;
 
-//------------------------------------------------------------------------------
-
 //SCREEN <= 768px
 @media (max-width: 768px) {
 
@@ -22,16 +20,12 @@
     top: 0;
     right: 0;
     z-index: 20;
-    transition: all 0.2s ease-in-out;
     transform: translateX(100%);
+    transition: all 0.2s ease-in-out;
   }
 
-  .nav-list {
-    text-align: center;
-
-    & li {
-      padding: clamp(0.5rem, 1.2vh, 1.2rem) 0;
-    }
+  .nav-list li div {
+    padding: clamp(0.5rem, 1.2vh, 1.2rem) 0;
   }
 
   //NAVBAR ACTIVE
@@ -73,7 +67,6 @@
     -ms-transform: scale(1.055);
     -webkit-transform: scale(1.055);
     transform: scale(1.055);
-
     text-shadow: 0 0 0.6rem $clr-light;
     transition: all 0.1s ease-in-out;
   }
@@ -85,7 +78,7 @@
     -webkit-transform: scale(1.055);
     transform: scale(1.055);
     //SHADOW
-    box-shadow: 0 0 1rem $clr-light;
+    box-shadow: 0 0 0.5rem $clr-light;
     //BACKGROUND
     background: $clr-light;
     //TEXT
@@ -111,19 +104,14 @@
     transition: all 0.25s ease-in-out;
   }
 
-  //CARDS HOVER & FOCUS
+  //CARDS AND FORM HOVER & FOCUS
   .card:hover,
-  .card:focus {
-    box-shadow: 0 0 0.5rem $clr-light;
-    transition: all 0.25s ease-in-out;
-  }
-
-  //FORM
+  .card:focus,
   input:hover,
   input:focus,
   textarea:hover,
   textarea:focus {
-    box-shadow: 0 0 1rem $clr-light;
+    box-shadow: 0 0 0.5rem $clr-light;
     transition: all 0.25s ease-in-out;
   }
 
@@ -133,5 +121,3 @@
     background: $clr-thumb-hvr;
   }
 }
-
-//------------------------------------------------------------------------------

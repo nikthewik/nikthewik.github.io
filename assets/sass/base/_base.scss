@@ -1,15 +1,12 @@
 @use "../abstracts/colors" as *;
 
-//------------------------------------------------------------------------------
-
 //BACKGROUND
 body {
   background-color: $clr-dark;
+  //To avoid overlaps on mobile landscape devices
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
   env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
-
-//------------------------------------------------------------------------------
 
 //TEXT
 a,
@@ -17,10 +14,12 @@ body {
   color: $clr-light;
 }
 
+.nav-list {
+  font-size: clamp(0.938rem, 1.8vw, 1rem);
+}
+
 h1,
-.cap,
-.cap-bn,
-.cap-msg {
+.cap {
   font-family: 'Cormorant', serif;
   font-weight: 400;
 }
@@ -30,10 +29,7 @@ h1 {
   letter-spacing: clamp(0.313rem, 1vw, 0.626rem);
 }
 
-.cap,
-.cap-bn,
-.cap-msg,
-#cursor {
+.cap {
   font-size: clamp(1.875rem, 3.8vw, 2.5rem);
   font-style: italic;
 }
@@ -59,6 +55,7 @@ a,
 body,
 h2,
 h3,
+.nav-list,
 .basic-text,
 .copyright {
   font-family: 'Poppins', sans-serif;
@@ -82,7 +79,11 @@ i {
   margin-top: 4.6rem;
 }
 
-//------------------------------------------------------------------------------
+//IMG
+.illustration-img {
+  width: clamp(18.75rem, 40vw, 23rem);
+  margin: 1rem 0;
+}
 
 //SOCIAL ICONS
 .social-icon {
@@ -124,15 +125,11 @@ i {
   align-items: center;
 }
 
-//------------------------------------------------------------------------------
-
 //POSITIONS
-.relative {
+.rel {
   position: relative;
 }
 
-.absolute {
+.abs {
   position: absolute;
 }
-
-//------------------------------------------------------------------------------
