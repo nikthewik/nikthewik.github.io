@@ -13,7 +13,7 @@
 }
 
 .cap-typewriter::before {
-  content: "Jr. Front-End Dev.";
+  content: "Front-End Dev.";
   animation: 20s 2s infinite words;
 }
 
@@ -33,7 +33,7 @@
 @keyframes words {
 
   0% {
-    content: "Jr. Front-End Dev.";
+    content: "Front-End Dev.";
   }
 
   20% {
