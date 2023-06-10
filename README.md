@@ -4,14 +4,14 @@ This is my first personal website, complete and fully responsive, built for the 
 
 ## Table of Contents
 
--[Overview](#overview)
-  -[The assignment](#the-assignment)
-  -[Built with](#built-with)
-  -[Link](#link)
--[My process](#my-process)
--[Useful resources](#useful-resources)
--[Author](#author)
--[Acknowledgments](#acknowledgments)
+- [Overview](#overview)
+  - [The assignment](#the-assignment)
+  - [Built with](#built-with)
+  - [Link](#link)
+- [My process](#my-process)
+- [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
