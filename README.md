@@ -49,11 +49,14 @@ For my photo project I decided to create a separate HTML file as a sort of stand
 Then I created a last HTML file of thanks for those who would send a message with the form.
 
 To better manage all this workflow I used SCSS.
-I started with creating a CSS reset file (`_reset.scss`) and writing general CSS code (`_base.scss`)
-in the base folder. Then I created the style of each section of my website in the pages folder.
-When I noticed some common code, I moved it all to the CSS base file. For some items, I created a components folder
-containing files like `_buttons.scss`, `_nav.scss` and `_hamburger.scss`. In order to manage the colors of the site
-in a smart way, I used variables, declared in the `_colors.scss` file in the abstracts folder.
+I started with creating a CSS reset file (`_reset.scss`) and writing general CSS code (`_base.scss`) in the base folder.
+
+Then I created the style of each section of my website in the pages folder. When I noticed some common code, I moved it all to the CSS base file.
+
+For some items, I created a components folder containing files like `_buttons.scss`, `_nav.scss` and `_hamburger.scss`.
+
+In order to manage the colors of the site in a smart way, I used variables, declared in the `_colors.scss` file in the abstracts folder.
+
 Finally, I put the mobile and desktop code into the `_media.scss` file in the media-queries folder.
 
 ## Author
@@ -67,9 +70,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Acknowledgments
 
-- [Kevin Powell](https://www.youtube.com/@KevinPowell) - Hands down, the best CSS instructor on YouTube
-from which I learned a lot: from the `clamp()` property to the responsive design;
-- [ChatGPT](https://openai.com/blog/chatgpt) - An artificial intelligence chatbot (developed by OpenAI),
-which I mainly used to better understand JavaScript code;
-- [Stack Overflow](https://stackoverflow.com/) - A wonderful community where you can find a solution
-to every Front-End Development problem and not only.
+- [Kevin Powell](https://www.youtube.com/@KevinPowell) - Hands down, the best CSS instructor on YouTube from which I learned a lot: from the `clamp()` property to the responsive design;
+- [ChatGPT](https://openai.com/blog/chatgpt) - An artificial intelligence chatbot (developed by OpenAI), which I mainly used to better understand JavaScript code;
+- [Stack Overflow](https://stackoverflow.com/) - A wonderful community where you can find a solution to every Front-End Development problem and not only.
