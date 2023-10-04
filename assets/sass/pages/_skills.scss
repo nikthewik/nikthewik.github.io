@@ -28,12 +28,13 @@
 
   &:first-of-type,
   &:nth-of-type(3),
-  &:last-of-type {
+  &:nth-of-type(5) {
     animation: 8s infinite highlighted;
   }
 
   &:nth-of-type(2),
-  &:nth-of-type(4) {
+  &:nth-of-type(4),
+  &:last-of-type {
     animation: 8s 4s infinite highlighted;
   }
 }

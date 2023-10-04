@@ -447,10 +447,10 @@ i {
 .skill:last-of-type {
   border-radius: 0 0 2rem 2rem;
 }
-.skill:first-of-type, .skill:nth-of-type(3), .skill:last-of-type {
+.skill:first-of-type, .skill:nth-of-type(3), .skill:nth-of-type(5) {
   animation: 8s infinite highlighted;
 }
-.skill:nth-of-type(2), .skill:nth-of-type(4) {
+.skill:nth-of-type(2), .skill:nth-of-type(4), .skill:last-of-type {
   animation: 8s 4s infinite highlighted;
 }
 

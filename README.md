@@ -3,6 +3,8 @@
 This is my first personal website, complete and fully responsive,
 built for the HTML and CSS exam on [start2impact University](https://www.start2impact.it/).
 
+![Website preview](https://raw.githubusercontent.com/nikthewik/nikthewik.github.io/main/assets/img/fed-my-website.webp)
+
 ## Table of Contents
 
 - [Overview](#overview)
